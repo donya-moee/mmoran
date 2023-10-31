@@ -75,6 +75,8 @@ View(detectmatrix)
 str(detectmatrix)
 y <- detectmatrix
 
+###############################################################################
+## ignore this part for comments, but still run it##
 # quick and dirty bootstrap to see if anything comes up as significant
 View(dhpivot_fixed2)
 
@@ -118,6 +120,7 @@ ggplot(DEV.FIT, aes(x=COVS, y = ADJ))+
   geom_point()+
   geom_errorbar(aes(ymin = ADJ + SD,
                     ymax = ADJ - SD), width = 0.5)
+##############################################################################
 
 # make dataframe for occupancy covatiates (site covariates) 
 site.cov <- vip.data[,3:ncol(vip.data)]
